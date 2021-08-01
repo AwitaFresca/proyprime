@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../instrumentos/productservice';
+import { Product } from '../instrumentos/product';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-instrumentos',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstrumentosComponent implements OnInit {
 
-  constructor() { }
+  products: Product[] = [];
+
+  constructor(private productService:
+    ProductService, private primengConfig: PrimeNGConfig) { }
+
 
   ngOnInit(): void {
+    this.productService.getProductsSmall().then(cars => this.products = cars);
+    this.primengConfig.ripple = true;
   }
 
 }

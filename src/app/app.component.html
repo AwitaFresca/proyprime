@@ -1,57 +1,58 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
 
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+
+<p-menubar [model]="items"  class="bg-gray-700">
+  <ng-template pTemplate="start" class="bg-gray-700">
+      <img src="assets/carro.png" height="40" class="p-mr-2">
+  </ng-template>
+  <ng-template pTemplate="end">
+    <p-button type="button" class="p-mr-2 bg-gray-700" (click)="visibleSidebar2 = true" label="Ingresar">
+      <p-sidebar [(visible)]="visibleSidebar2" position="right" [baseZIndex]="10000">
+        <h3>Right Sidebar</h3>
+      </p-sidebar>
+    </p-button>
+  </ng-template>
+</p-menubar>
+
+
+
+<router-outlet></router-outlet>
+
+<footer>
+
+  <div class="footer-container">
+    <div class="footer-main">
+      
+      <div class="footer-columna">
+        <h3>Dirección</h3>
+        <span class="fa fa-map-marker"><p>2244 Av. Los Incas - Bolivia</p></span>
+        <br>
+        <span class="fa fa-phone"><p>(+51)67 37237337</p></span>
+        <br>
+        <span class="fa fa-envelope"><p>cosmosrn@gmail.com</p></span>
+        
+      </div>
+      
+      <div class="footer-columna">
+        <h3>Sobre Nosotros</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quae laudantium voluptatum deleniti itaque?
+           Esse dicta illo voluptatem nobis repellendus? Velit veniam accusamus accusantium voluptate enim incidunt commodi aspernatur praesentium.</p>
+      </div>
+
     </div>
   </div>
 
-  <p-card header="Simple Card" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/07/origen-nombres-informatica-nunca-hubieras-imaginado_2.jpg">
-    </ng-template>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
-</p-card>
+  <div class="footer-copy-redes">
+    <div class="main-copy-redes">
+      <div class="footer-copy">
+        &copy; 2021, Todos los derechos reservados
+      </div>
+      <div class="footer-redes">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-github"></a>
+      </div>
+    </div>
+  </div>
 
-
-<button pButton type="button" label="Click" ></button>
-<p-button label="Click" ></p-button>
+</footer>

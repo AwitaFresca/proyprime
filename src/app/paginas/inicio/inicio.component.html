@@ -1,1 +1,79 @@
-<p>inicio works!</p>
+
+<div class="inicio-container">
+    <img class="edit1" src="/assets/guitarra.png">
+    <div class="centrado1">
+        <h2>Bienvenido/a!</h2>
+    </div>
+    <div class="centrado2">
+        <button pButton pRipple type="button" id="cambio" class="p-button-rounded" onclick = "location='contacto'">
+            <div class="urgent">Dirigirse</div>
+        </button>
+    </div>
+</div>
+
+<div class="centrar5">
+    <h1>Sientase comodo</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi labore maxime vitae quo qui, cumque ipsa 
+        consequatur eveniet perspiciatis temporibus fuga culpa voluptas ea porro dolorum natus dolores eius.</p>
+</div>
+
+<div class="super">
+    <div class="container2">
+
+        <div class="row row-cols-1 row-cols-md-2 g-2 ">
+
+            <p-card class="card1" header="Calidad" [style]="{'width': '19rem', 'margin-bottom': '2em', 'box-shadow': 'none'}">
+                <ng-template pTemplate="header" [style]="{'border-style': 'solid 3px'}">
+                    <img alt="Card" class="cardet"  src="/assets/estrella.png" >
+                </ng-template>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                    quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+            </p-card>
+
+            <p-card class="card1" header="Precio" [style]="{'width': '19rem', 'margin-bottom': '2em', 'box-shadow': 'none'}">
+                <ng-template pTemplate="header">
+                    <img alt="Card" class="cardet" src="/assets/iconos-de-dinero.png">
+                </ng-template>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                    quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+            </p-card>
+
+            <p-card class="card1" header="Atencion al cliente" [style]="{'width': '19rem', 'margin-bottom': '2em', 'box-shadow': 'none'}">
+                <ng-template pTemplate="header">
+                    <img alt="Card" class="cardet" src="/assets/cliente.png">
+                </ng-template>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                    quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+            </p-card>
+
+            <p-card class="card1" header="Mantenimiento" [style]="{'width': '19rem', 'margin-bottom': '2em', 'box-shadow': 'none'}">
+                <ng-template pTemplate="header">
+                    <img alt="Card" class="cardet" src="/assets/violin.png" >
+                </ng-template>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                    quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+            </p-card>
+
+        </div>
+    
+</div>
+</div>
+
+<p-timeline [value]="events" align="alternate">
+    <ng-template pTemplate="marker" let-event>
+        <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
+            <i [ngClass]="event.icon"></i>
+        </span>
+    </ng-template>
+    <ng-template pTemplate="content" let-event >
+        <p-card [header]="event.status" [subheader]="event.date">
+            <img *ngIf="event.image" [src]="'assets/' + event.image" [alt]="event.name" width="100%" style="margin-right: auto; margin-left: auto;" class="p-shadow-2" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+            
+        </p-card>
+    </ng-template>
+</p-timeline>
+
+

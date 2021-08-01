@@ -1,0 +1,126 @@
+
+
+.inicio-container{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.edit1{
+    max-width: 100%;
+
+}
+
+.centrado1{
+    position: absolute;
+    top: 60%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+
+.centrado2{
+    position: absolute;
+    top: 70%;
+    left: 12%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    
+}
+
+.urgent{
+    visibility: hidden;
+}
+
+.centrado1 h2{
+    color: #fff;
+}
+
+.p-button-rounded{
+    background-color: black;
+    border-color: black;
+    
+    
+}
+
+.p-button-rounded .buttom:hover{
+    background: #fff;
+}
+
+.p-button-rounded::before{
+    content: 'Dirigirse';
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: fixed;
+    top:20%;
+    left:15%;
+    
+    transition: all .5s ease-in-out;
+    
+    
+}
+
+.p-button-rounded:hover::before{
+    top: -32px;
+    
+}
+
+.p-button-rounded::after{
+    font-family: 'FontAwesome';
+    content: "\f291";
+    font-size: 19px;
+    color: white;
+    position:fixed;
+    top:150%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in-out;
+    
+
+}
+
+.p-button-rounded:hover::after{
+    top: 50%;
+    
+    
+}
+
+.centrar5{
+    width: 100%;
+    background: #292929;
+    color: #fff;
+    padding: 2%;
+}
+
+.centrar5 h1{
+    text-align: center;
+}
+
+.centrar5 p{
+    text-align: justify;
+}
+
+
+.container2{
+    margin-top: 2%;
+    text-align: justify;
+    width: 87%;
+    padding: 2mm;
+    border-radius: 15px;
+    margin-left: 13%;
+    margin-right: 10%;
+    
+}
+
+.cardet{
+    background: #fff;
+    width: 200px;
+    
+
+}
+
+.card1{
+    text-align: center;
+}

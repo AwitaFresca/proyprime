@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centrar1{
+    background: #292929;
+    
+    
+}
+
+/* HOVER PRUEBA */
+.container-all{
+    max-width: 1000px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-box a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.box{
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+    margin: 20px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.box:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.box .icon,
+.box h4,
+.box p{
+    position: relative;
+    z-index: 1;
+    transition: all 200ms;
+    
+}
+
+.box .icon{
+    font-size: 40px;
+    color:lawngreen;
+    transform: translateY(30px);
+}
+
+.box:hover .icon{
+    color: white;
+    font-size: 30px;
+    transform: translateY(0);
+}
+
+.box h4,
+.box p{
+    margin-top: 30px;
+}
+
+.box h4{
+    font-size: 30px;
+    transform: translateY(30px);
+}
+
+.box:hover h4{
+    transform: translateY(0);
+    color: white;
+}
+
+.box p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+}
+
+.box .background-hover{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(255, 204, 110), rgb(47, 0, 255));
+}
+
+.box:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+
+/* Cambiar color de las diferentes cajas */
+
+
+/* box1 */
+.box1 .icon{
+    color: rgb(0, 0, 0);
+    width: 55px;
+}
+
+.box1 .background-hover{
+    background: linear-gradient(to bottom, rgb(240, 49, 49), rgb(160, 74, 241));
+}
+
+/* box2 */
+.box2 .icon{
+    color: rgb(0, 0, 0);
+    
+}
+
+.box2 .background-hover{
+    background: linear-gradient(to bottom, rgb(245, 233, 62), rgb(196, 17, 212));
+    top: -170px;
+    left: -250px;
+}
+
+/* box3 */
+.box3 .icon{
+    color: rgb(0, 0, 0);
+    
+}
+
+.box3 .background-hover{
+    background: linear-gradient(to bottom, rgb(240, 49, 224), rgb(49, 238, 24));
+}
+
+/* box4 */
+.box4 .icon{
+    color: rgb(0, 0, 0);
+    
+}
+
+.box4 .background-hover{
+    background: linear-gradient(to bottom, rgb(243, 247, 10), rgb(42, 166, 248));
+}
+
+/* box5 */
+.box5 .icon{
+    color: rgb(0, 0, 0);
+    
+}
+
+.box5 .background-hover{
+    background: linear-gradient(to bottom, rgb(128, 92, 92), rgb(56, 221, 243));
+}
+
+/* box6 */
+.box6 .icon{
+    color: rgb(0, 0, 0);
+    
+}
+
+.box6 .background-hover{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+
+/* Fin del hover */
+
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .product-item {
+        flex-wrap: wrap;
+
+    }
+}
