@@ -5,7 +5,7 @@
         <h2>Bienvenido/a!</h2>
     </div>
     <div class="centrado2">
-        <button pButton pRipple type="button" id="cambio" class="p-button-rounded" onclick = "location='contacto'">
+        <button pButton pRipple type="button" id="cambio" class="p-button-rounded" onclick = "location='instrumentos'">
             <div class="urgent">Dirigirse</div>
         </button>
     </div>
@@ -60,7 +60,8 @@
 </div>
 </div>
 
-<p-timeline [value]="events" align="alternate">
+<div class="concentrar1">
+<p-timeline [value]="events" align="alternate" >
     <ng-template pTemplate="marker" let-event>
         <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
             <i [ngClass]="event.icon"></i>
@@ -75,5 +76,5 @@
         </p-card>
     </ng-template>
 </p-timeline>
-
+</div>
 

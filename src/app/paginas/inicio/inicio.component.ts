@@ -16,10 +16,10 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {
     this.events = [
-      {status: 'Ordered', icon: PrimeIcons.SHOPPING_CART, color: '#9C27B0', image: 'carro.png'},
-      {status: 'Processing', date: '15/10/2020 14:00', icon: PrimeIcons.COG, color: '#673AB7', image: 'reloj-de-arena.png'},
-      {status: 'Shipped', date: '15/10/2020 16:15', icon: PrimeIcons.ENVELOPE, color: '#FF9800', image: 'paquete-o-empaquetar.png'},
-      {status: 'Delivered', date: '16/10/2020 10:00', icon: PrimeIcons.CHECK, color: '#607D8B', image: 'camion-de-reparto.png'},
+      {status: 'Orden', icon: PrimeIcons.SHOPPING_CART , image: 'carro.png'},
+      {status: 'Procesamiento', icon: PrimeIcons.COG , image: 'reloj-de-arena.png'},
+      {status: 'Empaquetamiento', icon: PrimeIcons.ENVELOPE , image: 'paquete-o-empaquetar.png'},
+      {status: 'Delivery', icon: PrimeIcons.CHECK , image: 'camion-de-reparto.png'},
   ];
 
   }
