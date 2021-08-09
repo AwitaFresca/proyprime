@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,8 +16,14 @@ import { TiendasComponent } from './paginas/tiendas/tiendas.component';
 import { PrimeModule } from './prime-module';
 
 import { HttpClientModule } from '@angular/common/http';
-import { ProductService } from './paginas/instrumentos/productservice';
-
+import { ProductService } from './paginas/guitarras/productservice';
+import { GuitarrasComponent } from './paginas/guitarras/guitarras.component';
+import {RatingModule} from 'primeng/rating';
+import {DropdownModule} from 'primeng/dropdown';
+import {DialogModule} from 'primeng/dialog';
+import {PanelModule} from 'primeng/panel';
+import {RippleModule} from 'primeng/ripple';
+import {InputTextModule} from 'primeng/inputtext';
 
 
 @NgModule({
@@ -26,7 +33,8 @@ import { ProductService } from './paginas/instrumentos/productservice';
     InstrumentosComponent,
     ContactoComponent,
     MiembrosComponent,
-    TiendasComponent
+    TiendasComponent,
+    GuitarrasComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +42,13 @@ import { ProductService } from './paginas/instrumentos/productservice';
     BrowserAnimationsModule,
     PrimeModule,
     HttpClientModule,
+    FormsModule,
+    RatingModule,
+    DropdownModule,
+    DialogModule,
+    PanelModule,
+    RippleModule,
+    InputTextModule,
     
     
 

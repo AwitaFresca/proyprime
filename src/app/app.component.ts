@@ -34,29 +34,8 @@ export class AppComponent implements OnInit {
           },
           {
               label:'Tienda',
-             
-              items:[
-                  {
-                      label:'Todo',
-                      routerLink:"instrumentos",
-                  
-                  },
-                  {
-                      label:'Guitarras Electricas',
-                      routerLink:"mujer",
-                      
-                  },
-                  {
-                      label:'Pianos',
-                      routerLink:"hombre",
-                      
-                  },
-                  {
-                      label:'Flautas',
-                      routerLink:"kids",
-                    
-                  },
-             ]
+              routerLink:"instrumentos",
+            
           },
           {
               label:'Establecimientos',

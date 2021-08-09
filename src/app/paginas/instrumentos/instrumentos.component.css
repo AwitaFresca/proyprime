@@ -5,7 +5,7 @@
 }
 
 .centrar1{
-    background: #292929;
+    background: #272727;
     
     
 }
@@ -132,6 +132,7 @@
 /* box2 */
 .box2 .icon{
     color: rgb(0, 0, 0);
+    width: 55px;
     
 }
 
@@ -144,6 +145,7 @@
 /* box3 */
 .box3 .icon{
     color: rgb(0, 0, 0);
+    width: 55px;
     
 }
 
@@ -154,6 +156,7 @@
 /* box4 */
 .box4 .icon{
     color: rgb(0, 0, 0);
+    width: 55px;
     
 }
 
@@ -164,6 +167,7 @@
 /* box5 */
 .box5 .icon{
     color: rgb(0, 0, 0);
+    width: 55px;
     
 }
 
@@ -174,11 +178,42 @@
 /* box6 */
 .box6 .icon{
     color: rgb(0, 0, 0);
+    width: 55px;
     
 }
 
 .box6 .background-hover{
     background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+
+/* box7 */
+.box7 .icon{
+    color: rgb(0, 0, 0);
+    width: 55px;
+}
+
+.box7 .background-hover{
+    background: linear-gradient(to bottom, rgb(24, 240, 132), rgb(160, 74, 241));
+}
+
+/* box8 */
+.box8 .icon{
+    color: rgb(0, 0, 0);
+    width: 55px;
+}
+
+.box8 .background-hover{
+    background: linear-gradient(to bottom, rgb(240, 49, 176), rgb(14, 172, 245));
+}
+
+/* box9 */
+.box9 .icon{
+    color: rgb(0, 0, 0);
+    width: 55px;
+}
+
+.box9 .background-hover{
+    background: linear-gradient(to bottom, rgb(247, 172, 34), rgb(74, 241, 219));
 }
 
 /* Fin del hover */

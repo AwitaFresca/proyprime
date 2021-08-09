@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Product } from '../instrumentos/product';
+import { Product } from './product';
 
 @Injectable()
 export class ProductService {
@@ -58,7 +58,8 @@ export class ProductService {
     }
 
     getProductsWithOrdersSmall() {
-        return this.http.get<any>('assets/products-small.json')
+        return this.http.get<any>
+        ('assets/products-orders-small.json')
         .toPromise()
         .then(res => <Product[]>res.data)
         .then(data => { return data; });
@@ -76,14 +77,14 @@ export class ProductService {
             rating: this.generateRating()
         };
 
-        product.image = product.name.toLocaleLowerCase().split(/[ ,]+/).join('-')+".jpg";;
+        
         return product;
     }
 
     generateId() {
         let text = "";
         let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
+        
         for (var i = 0; i < 5; i++) {
             text += possible.charAt(Math.floor(Math.random() * possible.length));
         }

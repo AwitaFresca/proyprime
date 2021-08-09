@@ -1,0 +1,46 @@
+.centrar1{
+    
+    background: #272727;
+}
+
+.centrar2{
+    width: 100%;
+    text-align: center;
+}
+
+.concentrar2{
+    text-align: center;
+    padding: 2%;
+    background: #fff;
+}
+
+.container2{
+    margin-top: 2%;
+    text-align: justify;
+    width: 87%;
+    padding: 2mm;
+    border-radius: 15px;
+    margin-left: 13%;
+    margin-right: 10%;
+    
+}
+
+.cardet{
+    background: #fff;
+    width: 200px;
+    transition: all 1.2s;
+    
+    
+
+}
+
+
+
+.card1{
+    text-align: center;
+}
+
+
+.cardet:hover{
+    transform: scale(1.25);
+}

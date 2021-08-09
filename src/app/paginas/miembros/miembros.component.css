@@ -1,0 +1,71 @@
+.concentrar1{
+    width: 100%;
+    
+    color: #000;
+}
+
+.concentrar1 .img1{
+    margin-top: 2%;
+    text-align: center;
+    
+}
+
+.mover1{
+    height: 245px;
+    transition: all 1s;
+
+    
+}
+
+.img1 :hover{
+    transform: rotate(-360deg);
+    transition: all 1s;
+}
+
+.concentrar2{
+    text-align: center;
+    padding: 2%;
+    background: #fff;
+}
+
+.container2{
+    margin-top: 2%;
+    text-align: justify;
+    width: 87%;
+    padding: 2mm;
+    border-radius: 15px;
+    margin-left: 13%;
+    margin-right: 10%;
+    
+}
+
+.cardet{
+    background: #fff;
+    width: 200px;
+    transition: all 1.2s;
+    
+    
+
+}
+
+
+
+.card1{
+    text-align: center;
+}
+
+
+.cardet:hover{
+    transform: scale(1.25);
+}
+
+.concentrar3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+
+}
+
+.concentrar3 h1{
+    margin-bottom: 3%;
+}

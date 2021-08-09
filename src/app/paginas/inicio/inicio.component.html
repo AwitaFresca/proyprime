@@ -2,7 +2,10 @@
 <div class="inicio-container">
     <img class="edit1" src="/assets/guitarra.png">
     <div class="centrado1">
-        <h2>Bienvenido/a!</h2>
+        <h2>Bienvenido a Cosmos!</h2>
+    </div>
+    <div class="centrado3">
+        <h5>Siempre ofreciendo instrumentos de primera</h5>
     </div>
     <div class="centrado2">
         <button pButton pRipple type="button" id="cambio" class="p-button-rounded" onclick = "location='instrumentos'">
@@ -60,6 +63,10 @@
 </div>
 </div>
 
+<div class="edit5">
+    <h1>Los pasos de su compra</h1>
+</div>
+
 <div class="concentrar1">
 <p-timeline [value]="events" align="alternate" >
     <ng-template pTemplate="marker" let-event>
@@ -69,7 +76,7 @@
     </ng-template>
     <ng-template pTemplate="content" let-event >
         <p-card [header]="event.status" [subheader]="event.date">
-            <img *ngIf="event.image" [src]="'assets/' + event.image" [alt]="event.name" width="100%" style="margin-right: auto; margin-left: auto;" class="p-shadow-2" />
+            <img *ngIf="event.image" [src]="'assets/' + event.image" [alt]="event.name" width="100%" style="text-align: center ;margin-right: auto; margin-left: auto;" class="p-shadow-2" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
             
@@ -78,3 +85,8 @@
 </p-timeline>
 </div>
 
+<div class="concentrar5">
+    <h1>¿Como funcionamos?</h1>
+    <iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/SSzzOBPIOMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>

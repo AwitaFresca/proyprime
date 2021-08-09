@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TiendasComponent implements OnInit {
 
+  carousel:string[]=["assets/establecimientos/cipolletti.jpg","assets/establecimientos/neuquen.jpg","assets/establecimientos/allen.jpg"]
+
   constructor() { }
 
   ngOnInit(): void {

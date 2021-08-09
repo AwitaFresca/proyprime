@@ -4,6 +4,13 @@ body{
     background: darkslategray;
 }
 
+.editar1{
+    text-decoration: none;
+}
+
+.editar2{
+    margin-top: 2%;
+}
 
 footer{
     width: 100%;
